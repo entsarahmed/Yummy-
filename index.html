@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<!-- animation css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- link fontawesome -->
+  <link rel="stylesheet" href="./css/all.css"/>
+  <link rel="stylesheet" href="./css/all.min.css"/>
+  <!-- end fontawesome -->
+
+  <!-- link bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+  <!-- end bootstrap -->
+
+<!-- link css -->
+<link rel="stylesheet" href="./css/style.css"/>
+<!-- end -->
+</head>
+<body>
+  <nav class="position-fixed top-0 left-0 z-3 d-flex h-100">
+<div class="bg-black links  flex-column  ps-2 justify-content-between ">
+  <ul class="list-unstyled ">
+    <li class="animate__animated animate__bounceOutDown animate__delay-1s"><a href="#seach" id="Display" class="pb-3 pt-5 fs-5 px-3 d-inline-block text-decoration-none text-white text-capitalize">search</a></li>
+    <li class="animate__animated animate__bounceOutDown animate__delay-2s"><a href="#category" id="Category" class=" px-3 fs-5 d-inline-block text-decoration-none text-white text-capitalize">categories</a></li>
+    <li class="animate__animated animate__bounceOutDown animate__delay-3s"><a href="#area" id="Area" class="py-3 px-3 fs-5 d-inline-block text-decoration-none text-white text-capitalize">area</a></li>
+    <li class="animate__animated animate__bounceOutDown animate__delay-4s"><a href="#Ingredients" id="showIngredients" class="d-inline-block fs-5 px-3 text-decoration-none text-white text-capitalize">ingredients</a></li>
+    <li class="animate__animated animate__bounceOutDown animate__delay-5s"><a href="#contact" id="showContact" class="py-3 d-inline-block fs-5 px-3 text-decoration-none text-white text-capitalize">contact Us</a></li>
+  </ul>
+  <div class="ps-2 position-relative top-50">
+    <div class="pb-2">
+      <a href=""><i class="fa-brands fa-facebook text-white"></i></a>
+      <a href=""><i class="fa-brands fa-twitter text-white"></i></a>
+      <a href=""><i class="fa-solid fa-globe text-white"></i></a>
+    </div>
+    <p class="text-white pb-2 para">Copyright Â© 2019 All Rights Reserved.</p>
+  </div>
+</div>
+<!------------------- ----------------- -->
+<div class="bg-white d-flex flex-column justify-content-between align-items-center log ">
+  <img src="./images/logo.png" alt="" class="logo">
+  <div>
+    <i class="fa-solid fa-bars fs-1 text-black open"></i>
+    <i class="fa-solid fa-xmark fs-1 d-none text-black close"></i>
+  </div>
+  <div class="d-flex flex-column">
+    <i class="fa-solid fa-globe text-black"></i>
+    <i class="fa-solid fa-share-nodes py-3 text-black"></i>
+  </div>
+</div>
+  </nav>
+<!-- Start Home -->
+<div class="loading">
+  <span class="loader"></span>
+</div>
+<main class="min-vh-100 bg-black py-5" >
+  <!-- start home -->
+  <section class="row container-md mx-auto  g-4 bg-black" id="meals">   
+  </section>
+  <section class="row container-md mx-auto  g-4 bg-black d-none" id="description">   
+  
+  </section>
+<!-- end home -->
+
+<!-- start search -->
+ <div id="seach" class="d-none">
+   <section class="pt-4 pb-4 container-md mx-auto  g-4 bg-black d-none" id="inputs">   
+  <form action="" class="row">
+    <div class="col-md-5">
+    <input type="text" class="form-control text-white bg-black d-none" placeholder="Search By Name" id="searchName">
+  </div>
+  <div class="col-md-5">
+    <input type="text" class="form-control text-white bg-black d-none" placeholder="Search By First Letter" id="searchLetter">
+  </div>
+
+  </form>
+</section> 
+  <section class="row container-md mx-auto  g-4 bg-black d-none" id="search">   
+  </section>
+</div>
+ 
+<!-- end search -->
+ 
+<!-- home category -->
+  <section class="row container-md mx-auto py-4 g-4 bg-black d-none" id="category">   
+  </section>
+  <section class="row container-md mx-auto py-4 g-4 bg-black d-none" id="catdata">   
+  </section>
+  <section class="row container-md mx-auto  g-4 bg-black d-none" id="descriptionCategory">   
+  
+  </section>
+    <!-- end home category -->
+<!-- start area -->
+  <section class="row container-md mx-auto py-4 g-4 bg-black d-none" id="area">   
+  
+  
+  </section>
+  <section class="row container-md mx-auto py-4 g-4 bg-black d-none" id="catarea">   
+  </section>
+  <section class="row container-md mx-auto  g-4 bg-black d-none" id="descriptionarea">   
+  
+  </section>
+  <!-- end area -->
+
+  <!-- start gradients -->
+  <section class="row container-md mx-auto py-4 g-4 bg-black  d-none" id="Ingredients">   
+    
+  </section>
+  <section class="row container-md mx-auto py-4 g-4 bg-black d-none" id="catgredients">   
+  </section>
+  <section class="row container-md mx-auto  g-4 bg-black d-none " id="descriptiongredients">   
+  </section>
+
+  <!-- start gradients -->
+  <section class="container-md ps-md-5 mx-auto py-4 g-4 bg-black d-none" id="contact">
+    <form action="" class="row justify-content-md-center" id="formData">
+      <div class="col-md-4">
+        <div>
+          <input type="text" class="form-control" placeholder="Enter Your Name" id="enterName">
+          <p class="alert alert-danger p-3 invalid-feedback mt-2">Special characters and numbers not allowed</p>
+          <input type="text" class="form-control my-3" placeholder="Enter Your Phone" id="enterPhone">
+          <p class="alert alert-danger p-3 invalid-feedback mt-2">Enter valid Phone Number</p>
+
+          <input type="password" class="form-control mb-2" placeholder="Enter Your Password" id="enterPassword">
+          <p class="alert alert-danger p-3 invalid-feedback mt-2">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <input type="email" class="form-control" placeholder="Enter Your Email" id="enterEmail">
+          <p class="alert alert-danger p-3 invalid-feedback">Email not valid *exemple@yyy.zzz</p>
+
+          <input type="number" class="form-control my-3" placeholder="Enter Your Age"  id="enterAge">
+          <p class="alert alert-danger p-3 invalid-feedback mt-2">Enter valid age</p>
+          <input type="password" class="form-control" placeholder="Repassword" id="enterRepassword">
+          <p class="alert alert-danger p-3 invalid-feedback mt-2">Enter valid repassword</p>
+
+        </div>
+      </div>
+    </form>
+    <div class="d-flex justify-content-center align-items-center">
+    <button id="btnRegister" class="btn btn-outline-danger mt-4 px-3 fs-5 py-2">Submit</button>
+  </div>
+  </section>
+</main>
+
+
+<!-- End Home -->
+<!-- jquery -->
+<script src="js/jquery-3.7.1.min.js"></script>
+  <!-- link bootstrap-->
+   <script src="./js/bootstrap.bundle.min.js"></script>
+<!-- link js -->
+   <script src="js/index.js"></script>
+</body>
+</html>
